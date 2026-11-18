@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <title>Navi pWr</title>
@@ -8,10 +7,15 @@
     <meta content="web_dashboard" name="shell-type" />
     <link href="styles.css" rel="stylesheet" />
   </head>
+
   <body class="bg-surface font-body-md text-on-surface antialiased">
+    <!-- =====================================================
+         SIDEBAR · navegación agrupada por objetivos de la app
+         ===================================================== -->
     <aside
-      class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto">
+      class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col overflow-y-auto">
       <div class="p-space-md">
+        <!-- Brand -->
         <div
           class="flex items-center gap-space-sm px-space-xs py-space-sm mb-space-md">
           <img
@@ -22,14 +26,18 @@
             <span
               class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight"
               >Navi pWr</span
-            ><span class="font-label-sm text-label-sm text-secondary uppercase"
+            >
+            <span class="font-label-sm text-label-sm text-secondary uppercase"
               >Politechnika Wrocławska</span
             >
           </div>
         </div>
+
         <nav
+          aria-label="Main navigation"
           class="flex flex-col gap-1"
           data-active-classes="bg-primary text-on-primary font-bold shadow-sm">
+          <!-- General -->
           <a
             aria-current="page"
             class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full transition-all bg-primary text-on-primary font-bold shadow-sm"
@@ -37,37 +45,28 @@
             href="index.html"
             ><span class="material-symbols-outlined text-[20px]">home</span
             ><span>Home</span></a
-          ><a
-            class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
-            data-path="assistant"
-            href="Assistance%20screen.html"
-            ><span class="material-symbols-outlined text-[20px]">smart_toy</span
-            ><span>Assistant</span></a
-          ><a
-            class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
-            data-path="events"
-            href="#"
-            ><span class="material-symbols-outlined text-[20px]"
-              >calendar_today</span
-            ><span>Events</span></a
-          ><a
-            class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
-            data-path="meet-people"
-            href="#"
-            ><span class="material-symbols-outlined text-[20px]">group</span
-            ><span>Meet people</span></a
-          ><a
-            class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
-            data-path="pwr-information"
-            href="#"
-            ><span class="material-symbols-outlined text-[20px]"
-              >account_balance</span
-            ><span>PWr information</span></a
           >
+          <!-- Navigating the city -->
           <div class="pt-space-md pb-space-xs px-space-md">
             <span
               class="font-label-sm text-label-sm text-secondary uppercase tracking-wider"
-              >Explore places</span
+              >Navigate the city</span
+            >
+          </div>
+          <a
+            class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="transport"
+            href="Transport%20screen.html"
+            ><span class="material-symbols-outlined text-[18px]"
+              >directions_transit</span
+            ><span>Transport</span></a
+          >
+
+          <!-- Saving money -->
+          <div class="pt-space-md pb-space-xs px-space-md">
+            <span
+              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider"
+              >Save money</span
             >
           </div>
           <a
@@ -77,73 +76,91 @@
             ><span class="material-symbols-outlined text-[18px]"
               >shopping_basket</span
             ><span>Supermarkets</span></a
-          ><a
-            class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
-            data-path="pharmacies"
-            href="#"
-            ><span class="material-symbols-outlined text-[18px]"
-              >local_pharmacy</span
-            ><span>Pharmacies</span></a
-          ><a
+          >
+          <a
             class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
             data-path="restaurants"
             href="restaurnt%20screen.html"
             ><span class="material-symbols-outlined text-[18px]"
               >restaurant</span
             ><span>Restaurants</span></a
-          ><a
+          >
+
+          <!-- University information -->
+          <div class="pt-space-md pb-space-xs px-space-md">
+            <span
+              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider"
+              >University</span
+            >
+          </div>
+          <a
             class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
-            data-path="bars"
-            href="bar%20screen.html"
-            ><span class="material-symbols-outlined text-[18px]">local_bar</span
-            ><span>Bars</span></a
-          ><a
-            class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
-            data-path="clubs"
+            data-path="pwr-information"
             href="#"
-            ><span class="material-symbols-outlined text-[18px]">nightlife</span
-            ><span>Clubs</span></a
-          ><a
+            ><span class="material-symbols-outlined text-[18px]"
+              >account_balance</span
+            ><span>PWr information</span></a
+          >
+          <a
             class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
             data-path="libraries"
             href="#"
             ><span class="material-symbols-outlined text-[18px]"
               >local_library</span
             ><span>Libraries</span></a
-          ><a
+          >
+          <a
             class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
             data-path="dormitory-and-housing"
             href="#"
             ><span class="material-symbols-outlined text-[18px]">apartment</span
             ><span>Dormitory and housing</span></a
-          ><a
+          >
+
+          <!-- Meeting people & student activities -->
+          <div class="pt-space-md pb-space-xs px-space-md">
+            <span
+              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider"
+              >People &amp; activities</span
+            >
+          </div>
+          <a
             class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
-            data-path="transport"
-            href="Transport%20screen.html"
+            data-path="events"
+            href="#"
             ><span class="material-symbols-outlined text-[18px]"
-              >directions_transit</span
-            ><span>Transport</span></a
+              >calendar_today</span
+            ><span>Events</span></a
+          >
+          <a
+            class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="meet-people"
+            href="#"
+            ><span class="material-symbols-outlined text-[18px]">group</span
+            ><span>Meet people</span></a
+          >
+          <a
+            class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="bars"
+            href="bar%20screen.html"
+            ><span class="material-symbols-outlined text-[18px]">local_bar</span
+            ><span>Bars</span></a
+          >
+          <a
+            class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all"
+            data-path="clubs"
+            href="#"
+            ><span class="material-symbols-outlined text-[18px]">nightlife</span
+            ><span>Clubs</span></a
           >
         </nav>
       </div>
-      <div
-        class="p-space-md bg-surface-container-low mx-space-sm mb-space-sm rounded-xl">
-        <div class="flex items-center gap-space-sm">
-          <span class="material-symbols-outlined text-primary text-[20px]"
-            >hub</span
-          >
-          <div>
-            <p class="font-label-sm text-label-sm text-on-surface font-bold">
-              PWr Campus Wifi
-            </p>
-            <p class="font-body-sm text-body-sm text-secondary">
-              Eduroam Connected
-            </p>
-          </div>
-        </div>
-      </div>
     </aside>
+
     <div class="pl-64">
+      <!-- =====================================================
+           TOP BAR · búsqueda, idioma, notificaciones, perfil
+           ===================================================== -->
       <header
         class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl">
         <div class="flex items-center flex-1 max-w-lg mr-space-lg">
@@ -151,7 +168,9 @@
             <span
               class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[20px]"
               >search</span
-            ><input
+            >
+            <input
+              aria-label="Search"
               class="w-full pl-11 pr-space-md py-2 bg-surface-container rounded-full font-body-md text-body-md text-on-surface placeholder-outline focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
               placeholder="Ask anything or search places..."
               type="text" />
@@ -160,19 +179,22 @@
         <div class="flex items-center gap-space-md">
           <div
             class="flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer text-on-surface-variant">
-            <span class="material-symbols-outlined text-[18px]">language</span
-            ><span
+            <span class="material-symbols-outlined text-[18px]">language</span>
+            <span
               class="font-label-md text-label-md font-semibold text-on-surface"
               >EN</span
-            ><span class="material-symbols-outlined text-[16px]"
+            >
+            <span class="material-symbols-outlined text-[16px]"
               >expand_more</span
             >
           </div>
           <button
+            aria-label="Notifications"
             class="relative p-2 rounded-full hover:bg-surface-container transition-colors text-on-surface-variant">
             <span class="material-symbols-outlined text-[22px]"
               >notifications</span
-            ><span
+            >
+            <span
               class="absolute top-1.5 right-1.5 w-2 h-2 bg-primary rounded-full ring-2 ring-surface-container-lowest"></span>
           </button>
           <div class="flex items-center gap-space-sm pl-space-xs">
@@ -192,21 +214,26 @@
           </div>
         </div>
       </header>
+
       <main
         class="w-full pt-16 bg-surface min-h-screen px-space-xl py-space-xl">
-        <div class="flex flex-col w-full gap-space-lg">
-          <!-- Top Hero & University Info Section -->
+        <div class="flex flex-col w-full gap-space-xl">
+          <!-- =================================================
+               1. HERO + UNIVERSITY INFORMATION
+               ================================================= -->
           <section
+            aria-labelledby="hero-title"
             class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
-            <!-- Crimson Hero Banner -->
+            <!-- Hero banner -->
             <div
               class="lg:col-span-8 bg-primary rounded-xl p-space-xl text-on-primary shadow-md relative overflow-hidden flex flex-col justify-between min-h-[220px]">
-              <!-- Background subtle architectural grid watermark -->
-              <div class="absolute inset-0 opacity-10 pointer-events-none">
+              <div
+                aria-hidden="true"
+                class="absolute inset-0 opacity-10 pointer-events-none">
                 <svg
                   class="w-full h-full"
                   fill="none"
-                  viewbox="0 0 400 200"
+                  viewBox="0 0 400 200"
                   xmlns="http://www.w3.org/2000/svg">
                   <circle
                     cx="340"
@@ -233,19 +260,15 @@
                 </svg>
               </div>
               <div class="relative z-10 max-w-xl">
-                <div
-                  class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/15 text-white text-[11px] font-bold tracking-wider uppercase mb-3">
-                  <span
-                    class="w-1.5 h-1.5 rounded-full bg-surface-bright animate-ping"></span>
-                </div>
                 <h1
+                  id="hero-title"
                   class="font-display-hero text-display-hero text-on-primary leading-tight font-extrabold tracking-tight">
                   Welcome to Wrocław
                 </h1>
                 <p
                   class="font-body-lg text-body-lg text-on-primary-container mt-space-xs font-normal opacity-95 leading-relaxed">
-                  Find shops, places, events and people around PWr, and get
-                  answers to student questions in one app.
+                  Get around the city, spend less, find university information,
+                  meet people and join student activities, all in one app.
                 </p>
               </div>
               <div
@@ -260,7 +283,8 @@
                 </button>
               </div>
             </div>
-            <!-- University Information Card -->
+
+            <!-- University information card -->
             <div
               class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
               <div>
@@ -280,8 +304,8 @@
                     </h2>
                     <p
                       class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">
-                      Academic calendar, scholarships, campus facilities, dean's
-                      office, and verified news.
+                      Academic calendar, scholarships, dean's office and
+                      verified news.
                     </p>
                   </div>
                 </div>
@@ -309,139 +333,50 @@
                       >Legitymacja ELS</span
                     >
                   </div>
+                  <div
+                    class="p-2.5 rounded-lg bg-surface-container-low flex items-center gap-2 col-span-2">
+                    <span
+                      class="material-symbols-outlined text-primary text-[18px]"
+                      >local_library</span
+                    >
+                    <span
+                      class="font-label-sm text-label-sm text-on-surface font-semibold"
+                      >Main Library (D-21) · closes 21:00</span
+                    >
+                  </div>
                 </div>
               </div>
               <div class="pt-space-md mt-space-sm">
-                <button
-                  class="w-full py-2.5 px-space-md rounded-full bg-surface-container text-primary hover:bg-surface-container-high font-headline-sm text-headline-sm font-bold text-center transition-all flex items-center justify-center gap-1.5">
+                <a
+                  class="w-full py-2.5 px-space-md rounded-full bg-surface-container text-primary hover:bg-surface-container-high font-headline-sm text-headline-sm font-bold text-center transition-all flex items-center justify-center gap-1.5"
+                  href="#">
                   <span>Open PWr information</span>
                   <span class="material-symbols-outlined text-[18px]"
                     >arrow_forward</span
                   >
-                </button>
+                </a>
               </div>
             </div>
           </section>
-          <!-- Quick Access Categories -->
-          <section class="flex flex-col gap-space-sm">
+
+          <!-- =================================================
+               2. QUICK ACCESS
+               ================================================= -->
+          <section
+            aria-labelledby="quick-title"
+            class="flex flex-col gap-space-sm">
             <div class="flex items-center justify-between">
-              <h3
+              <h2
+                id="quick-title"
                 class="font-headline-md text-headline-md text-on-surface font-bold">
                 Quick access
-              </h3>
+              </h2>
               <span
                 class="font-label-md text-label-md text-secondary font-medium"
                 >8 essential categories</span
               >
             </div>
-            <!-- 8 Tiles Row -->
             <div class="grid grid-cols-4 md:grid-cols-8 gap-space-sm">
-              <!-- Supermarkets -->
-              <a
-                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
-                href="#">
-                <div
-                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
-                  <span class="material-symbols-outlined text-[24px]"
-                    >shopping_cart</span
-                  >
-                </div>
-                <span
-                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
-                  >Supermarkets</span
-                >
-              </a>
-              <!-- Pharmacies -->
-              <a
-                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
-                href="#">
-                <div
-                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
-                  <span class="material-symbols-outlined text-[24px]"
-                    >local_pharmacy</span
-                  >
-                </div>
-                <span
-                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
-                  >Pharmacies</span
-                >
-              </a>
-              <!-- Restaurants -->
-              <a
-                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
-                href="restaurnt%20screen.html">
-                <div
-                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
-                  <span class="material-symbols-outlined text-[24px]"
-                    >restaurant</span
-                  >
-                </div>
-                <span
-                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
-                  >Restaurants</span
-                >
-              </a>
-              <!-- Bars -->
-              <a
-                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
-                href="bar%20screen.html">
-                <div
-                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
-                  <span class="material-symbols-outlined text-[24px]"
-                    >local_bar</span
-                  >
-                </div>
-                <span
-                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
-                  >Bars</span
-                >
-              </a>
-              <!-- Clubs -->
-              <a
-                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
-                href="#">
-                <div
-                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
-                  <span class="material-symbols-outlined text-[24px]"
-                    >music_note</span
-                  >
-                </div>
-                <span
-                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
-                  >Clubs</span
-                >
-              </a>
-              <!-- Libraries -->
-              <a
-                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
-                href="#">
-                <div
-                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
-                  <span class="material-symbols-outlined text-[24px]"
-                    >menu_book</span
-                  >
-                </div>
-                <span
-                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
-                  >Libraries</span
-                >
-              </a>
-              <!-- Dormitory and housing -->
-              <a
-                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
-                href="#">
-                <div
-                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
-                  <span class="material-symbols-outlined text-[24px]"
-                    >home</span
-                  >
-                </div>
-                <span
-                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
-                  >Dormitory &amp; housing</span
-                >
-              </a>
-              <!-- Transport -->
               <a
                 class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
                 href="Transport%20screen.html">
@@ -456,178 +391,135 @@
                   >Transport</span
                 >
               </a>
+              <a
+                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
+                href="#">
+                <div
+                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
+                  <span class="material-symbols-outlined text-[24px]"
+                    >shopping_cart</span
+                  >
+                </div>
+                <span
+                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
+                  >Supermarkets</span
+                >
+              </a>
+              <a
+                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
+                href="restaurnt%20screen.html">
+                <div
+                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
+                  <span class="material-symbols-outlined text-[24px]"
+                    >restaurant</span
+                  >
+                </div>
+                <span
+                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
+                  >Restaurants</span
+                >
+              </a>
+              <a
+                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
+                href="#">
+                <div
+                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
+                  <span class="material-symbols-outlined text-[24px]"
+                    >menu_book</span
+                  >
+                </div>
+                <span
+                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
+                  >Libraries</span
+                >
+              </a>
+              <a
+                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
+                href="#">
+                <div
+                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
+                  <span class="material-symbols-outlined text-[24px]"
+                    >home</span
+                  >
+                </div>
+                <span
+                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
+                  >Dormitory &amp; housing</span
+                >
+              </a>
+              <a
+                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
+                href="#">
+                <div
+                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
+                  <span class="material-symbols-outlined text-[24px]"
+                    >calendar_today</span
+                  >
+                </div>
+                <span
+                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
+                  >Events</span
+                >
+              </a>
+              <a
+                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
+                href="bar%20screen.html">
+                <div
+                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
+                  <span class="material-symbols-outlined text-[24px]"
+                    >local_bar</span
+                  >
+                </div>
+                <span
+                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
+                  >Bars</span
+                >
+              </a>
+              <a
+                class="group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-primary hover:text-on-primary transition-all duration-200 text-center shadow-sm"
+                href="#">
+                <div
+                  class="w-10 h-10 rounded-full flex items-center justify-center mb-1.5 text-primary group-hover:text-on-primary transition-colors">
+                  <span class="material-symbols-outlined text-[24px]"
+                    >music_note</span
+                  >
+                </div>
+                <span
+                  class="font-label-md text-label-md text-on-surface group-hover:text-on-primary font-semibold line-clamp-1"
+                  >Clubs</span
+                >
+              </a>
             </div>
           </section>
-          <!-- Two-Column Main Content Section -->
+
+          <!-- =================================================
+               3. NAVIGATING THE CITY
+               ================================================= -->
           <section
+            aria-labelledby="navigate-title"
             class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
-            <!-- Left Column: Recommended Nearby Places -->
             <div class="lg:col-span-7 flex flex-col gap-space-md">
               <div class="flex items-center justify-between">
                 <div>
-                  <h3
+                  <h2
+                    id="navigate-title"
                     class="font-headline-md text-headline-md text-on-surface font-bold">
-                    Recommended nearby
-                  </h3>
+                    Navigate the city
+                  </h2>
                   <p class="font-body-sm text-body-sm text-secondary">
-                    Verified spots within 5 minutes walking distance
+                    Live public transport near campus
                   </p>
                 </div>
                 <a
                   class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-1"
-                  href="#">
-                  <span>View all</span>
+                  href="Transport%20screen.html">
+                  <span>All transport</span>
                   <span class="material-symbols-outlined text-[16px]"
                     >chevron_right</span
                   >
                 </a>
               </div>
-              <!-- 3 Place Cards Grid -->
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
-                <!-- Card 1: Bar Mleczny / Student Milk Bar -->
-                <div
-                  class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
-                  <div
-                    class="relative h-36 w-full overflow-hidden bg-primary-fixed">
-                    <img
-                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      data-alt="A cozy Polish traditional student milk bar restaurant in Wroclaw with wooden tables, ceramic soup bowls of barszcz, fresh pierogi, and warm amber lighting catering to university students in casual attire."
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBziaIHGf_nr4pf-GfavlrSJDZM7TZKm9OIYX9clNW2R9KiTY2U64z3DmNmLktl4IebvlhXJnVACLKGdqqQ2TqNPXdEzpyJQtA7WycaDO2NGPlnAmas7Ki8f08E6yqQbBjD_CtlelGNUn7AIyIcAiFrWBgNAXBg0arrLxrLbdE0aPhlPTwsblZhF-VyZNp1VjQTdN5Q2wUgK368giO6N7-jen5kGrhr76n52lVOI13I" />
-                    <div
-                      class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1 shadow-sm">
-                      <span
-                        class="material-symbols-outlined text-[14px] text-primary material-symbol-filled"
-                        >star</span
-                      >
-                      <span>4.8</span>
-                    </div>
-                    <div
-                      class="absolute bottom-2.5 right-2.5 bg-primary text-on-primary px-2 py-0.5 rounded-full font-label-sm text-label-sm font-semibold shadow-sm">
-                      200 m
-                    </div>
-                  </div>
-                  <div class="p-3.5 flex flex-col flex-1 justify-between">
-                    <div>
-                      <span
-                        class="font-label-sm text-label-sm text-secondary uppercase font-semibold"
-                        >Restaurants</span
-                      >
-                      <h4
-                        class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight group-hover:text-primary transition-colors mt-0.5">
-                        Milk Bar Student
-                      </h4>
-                    </div>
-                    <div
-                      class="pt-2 mt-2 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
-                      <span class="flex items-center gap-1"
-                        ><span
-                          class="material-symbols-outlined text-[16px] text-primary"
-                          >payments</span
-                        >
-                        12-25 PLN</span
-                      >
-                      <span class="text-primary font-semibold">Open now</span>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card 2: Main Library (Bibliotech / D-21) -->
-                <div
-                  class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
-                  <div
-                    class="relative h-36 w-full overflow-hidden bg-secondary-fixed">
-                    <img
-                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      data-alt="Modern architectural interior of Wroclaw University of Science and Technology central library building with high glass ceilings, quiet study pods, rows of books, and students working on laptops with river Odra view outside."
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBQHk-mPgM-R5L0v_EWH1T5HT5fKQzHyt4SuWXDEgpA2Or0jt11IgUIooYl6PqPT7A0UcudY9mMfJTaKJsPH0JpfM2BS1ydytCPWnpLWxi_abySg1mz_tTtR3RQksqfbzg9B0lwJQjzclI88hoDyFd0GDlr0mdczfgytbB077TmH0dIJnX8orHZ0bGmyC2jT1m2uaBw0yQAikDW_ovBnCeRm9xUhjIQ5yuX_IYMBar" />
-                    <div
-                      class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1 shadow-sm">
-                      <span
-                        class="material-symbols-outlined text-[14px] text-primary material-symbol-filled"
-                        >star</span
-                      >
-                      <span>4.9</span>
-                    </div>
-                    <div
-                      class="absolute bottom-2.5 right-2.5 bg-primary text-on-primary px-2 py-0.5 rounded-full font-label-sm text-label-sm font-semibold shadow-sm">
-                      150 m
-                    </div>
-                  </div>
-                  <div class="p-3.5 flex flex-col flex-1 justify-between">
-                    <div>
-                      <span
-                        class="font-label-sm text-label-sm text-secondary uppercase font-semibold"
-                        >Libraries</span
-                      >
-                      <h4
-                        class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight group-hover:text-primary transition-colors mt-0.5">
-                        Main Library (D-21)
-                      </h4>
-                    </div>
-                    <div
-                      class="pt-2 mt-2 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
-                      <span class="flex items-center gap-1"
-                        ><span
-                          class="material-symbols-outlined text-[16px] text-primary"
-                          >wifi</span
-                        >
-                        850 Mbps</span
-                      >
-                      <span class="text-primary font-semibold"
-                        >Closes 21:00</span
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- Card 3: Apteka Politechnika -->
-                <div
-                  class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
-                  <div
-                    class="relative h-36 w-full overflow-hidden bg-surface-container-high">
-                    <img
-                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      data-alt="Clean and modern university campus pharmacy storefront in Wroclaw with a glowing green neon cross, glass storefront, shelves of healthcare supplies, and friendly multilingual pharmacist behind the counter."
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfr9ibve8A97hDDji6LEhqWxQl76CRstlkoLpqSGTDkokM_FftITvdO_jjj4U170Tnx5YWgizoI5tLiGXRZ7AVRHMwkixOuiM5VX3vNXa3LkoyI8DkB84LFfo_5Nz4McwrpqDxHhVk3TxNKPIkG3efc4fq0oMxId1sE2qwcTX7AXtbmjIxoxPz4IusxMNAOXxbSyPH6tF-vJTbTf0rcymMM69ipxjQP1-f_UqVE7IZ" />
-                    <div
-                      class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1 shadow-sm">
-                      <span
-                        class="material-symbols-outlined text-[14px] text-primary material-symbol-filled"
-                        >star</span
-                      >
-                      <span>4.6</span>
-                    </div>
-                    <div
-                      class="absolute bottom-2.5 right-2.5 bg-primary text-on-primary px-2 py-0.5 rounded-full font-label-sm text-label-sm font-semibold shadow-sm">
-                      300 m
-                    </div>
-                  </div>
-                  <div class="p-3.5 flex flex-col flex-1 justify-between">
-                    <div>
-                      <span
-                        class="font-label-sm text-label-sm text-secondary uppercase font-semibold"
-                        >Pharmacies</span
-                      >
-                      <h4
-                        class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight group-hover:text-primary transition-colors mt-0.5">
-                        Apteka Politechnika
-                      </h4>
-                    </div>
-                    <div
-                      class="pt-2 mt-2 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
-                      <span class="flex items-center gap-1"
-                        ><span
-                          class="material-symbols-outlined text-[16px] text-primary"
-                          >translate</span
-                        >
-                        EN / PL</span
-                      >
-                      <span class="text-primary font-semibold"
-                        >24/7 Service</span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Live Campus Transit & Odra River Route Widget -->
+              <!-- Tram hub widget -->
               <div
                 class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
                 <div class="flex items-center gap-3">
@@ -655,7 +547,8 @@
                   >
                   <button
                     class="p-1.5 rounded-full hover:bg-surface-container text-secondary transition-colors"
-                    title="Refresh transit">
+                    title="Refresh transit"
+                    aria-label="Refresh transit">
                     <span class="material-symbols-outlined text-[18px]"
                       >refresh</span
                     >
@@ -663,151 +556,9 @@
                 </div>
               </div>
             </div>
-            <!-- Right Column: Upcoming Activities & Mini Campus Route Preview -->
+
+            <!-- Campus wayfinding -->
             <div class="lg:col-span-5 flex flex-col gap-space-md">
-              <div class="flex items-center justify-between">
-                <div>
-                  <h3
-                    class="font-headline-md text-headline-md text-on-surface font-bold">
-                    Upcoming student activities
-                  </h3>
-                  <p class="font-body-sm text-body-sm text-secondary">
-                    Events happening on and around campus
-                  </p>
-                </div>
-                <a
-                  class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-1"
-                  href="#">
-                  <span>Calendar</span>
-                  <span class="material-symbols-outlined text-[16px]"
-                    >chevron_right</span
-                  >
-                </a>
-              </div>
-              <!-- Activity Items List -->
-              <div class="flex flex-col gap-space-sm">
-                <!-- Activity 1: Welcome mixer -->
-                <div
-                  class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-3.5 group cursor-pointer">
-                  <div
-                    class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 relative bg-primary-fixed">
-                    <img
-                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
-                      data-alt="International university students holding drinks and laughing during an autumn evening orientation mixer event in a vibrant campus lounge decorated with fairy lights in Wroclaw."
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZaJIryqhTY05Il5QsIySAeeis3rXrKlbtkie9PH84QAAIWXMf8nbmwpFUcl52wsaOKrnfC8nJDCMBmea05LGw-QYVkiwSLl3g84sG_3evdq0K9summneLsqQB8ft3lOlVgp4PYnkf88dGPPekRZn4L7InUFmDgdnuICM47QMftFYB2xiY_AlKY45FiKLnhAhGlf4wYO5YYNV6urTbFOrmDJMsvZx9-otgrufhYLGf" />
-                  </div>
-                  <div class="flex-1 min-w-0">
-                    <div class="flex items-center gap-2 mb-1">
-                      <span
-                        class="bg-primary text-on-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase"
-                        >Free</span
-                      >
-                      <span class="font-label-sm text-label-sm text-secondary"
-                        >Student Hub (C-13)</span
-                      >
-                    </div>
-                    <h4
-                      class="font-headline-sm text-headline-sm text-on-surface font-bold truncate group-hover:text-primary transition-colors">
-                      Welcome mixer for new students
-                    </h4>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
-                      <span
-                        class="material-symbols-outlined text-[15px] text-primary"
-                        >schedule</span
-                      >
-                      Sat 14 Nov, 19:00
-                    </p>
-                  </div>
-                  <button
-                    class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex-shrink-0">
-                    <span class="material-symbols-outlined text-[18px]"
-                      >add</span
-                    >
-                  </button>
-                </div>
-                <!-- Activity 2: Career fair: IT and engineering -->
-                <div
-                  class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-3.5 group cursor-pointer">
-                  <div
-                    class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 relative bg-secondary-fixed">
-                    <img
-                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
-                      data-alt="Excited tech university students speaking with software engineering recruiters at a buzzing university career exhibition booth in Building A1 at Wroclaw University of Science and Technology."
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDAa8FV_uzunSMJGPOp6JD4-7OZsf00sw4OBOwi6LV6H6bFpyN8e9jKcWHlg3TagObFmDCkhttrLbd4Tn2G5vrDfGggvDCdphjoPbHaA5BkTgngnm-x3ZfoLbODcWCDjegEDpG3l-Y-knDqiE23N6XHUGJfNo4tKX8Gex1DIhiSIYOpA-l_HSLeNDdsgjIcWiSchySIylCB-6Kclh9XwTbyfGN1vuC5RDztPxEHVfy" />
-                  </div>
-                  <div class="flex-1 min-w-0">
-                    <div class="flex items-center gap-2 mb-1">
-                      <span
-                        class="bg-primary text-on-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase"
-                        >Free</span
-                      >
-                      <span class="font-label-sm text-label-sm text-secondary"
-                        >Building A-1 Aula</span
-                      >
-                    </div>
-                    <h4
-                      class="font-headline-sm text-headline-sm text-on-surface font-bold truncate group-hover:text-primary transition-colors">
-                      Career fair: IT and engineering
-                    </h4>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
-                      <span
-                        class="material-symbols-outlined text-[15px] text-primary"
-                        >schedule</span
-                      >
-                      Tue 17 Nov, 10:00
-                    </p>
-                  </div>
-                  <button
-                    class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex-shrink-0">
-                    <span class="material-symbols-outlined text-[18px]"
-                      >add</span
-                    >
-                  </button>
-                </div>
-                <!-- Activity 3: Campus Night Pub Crawl -->
-                <div
-                  class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-3.5 group cursor-pointer">
-                  <div
-                    class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 relative bg-tertiary-fixed">
-                    <img
-                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
-                      data-alt="Nightlife photo of university students celebrating along Wyspa Slodowa and old town pubs in Wroclaw Poland with neon city reflections in river water."
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb3hwYD8icOTRq11NCw_uvMarx1mhjPSScHAMLIjRHn7A-cus5_LhWQ8ik1fXGCYqxcJVAVfRmDyfWQL-xDDz7lIgMqApSbYrI7rgQHHW2AhAPcFPOrHRlLfogV0bj0ZE_67DJs_jdfXBsejg2U2xHvstMAnBDuMJl3JuJSkSnHGXxkNF0IbBrFLD-NshaGUKzXGNQrjPoKzeAf4cUuba1DxnE9uo-u0fkn8C8q0dk" />
-                  </div>
-                  <div class="flex-1 min-w-0">
-                    <div class="flex items-center gap-2 mb-1">
-                      <span
-                        class="bg-surface-container-high text-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase"
-                        >15 PLN</span
-                      >
-                      <span class="font-label-sm text-label-sm text-secondary"
-                        >Meeting at Polinka Station</span
-                      >
-                    </div>
-                    <h4
-                      class="font-headline-sm text-headline-sm text-on-surface font-bold truncate group-hover:text-primary transition-colors">
-                      Campus Night Pub Crawl
-                    </h4>
-                    <p
-                      class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
-                      <span
-                        class="material-symbols-outlined text-[15px] text-primary"
-                        >schedule</span
-                      >
-                      Fri 20 Nov, 20:30
-                    </p>
-                  </div>
-                  <button
-                    class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex-shrink-0">
-                    <span class="material-symbols-outlined text-[18px]"
-                      >add</span
-                    >
-                  </button>
-                </div>
-              </div>
-              <!-- Interactive Mini Route Preview Card -->
               <div
                 class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
                 <div class="flex items-center justify-between mb-space-sm">
@@ -826,11 +577,9 @@
                     Live Walking Map
                   </span>
                 </div>
-                <!-- Campus Location Map Box -->
                 <div
                   class="w-full h-32 rounded-lg relative overflow-hidden bg-cover bg-center shadow-inner mini-route-preview"
                   data-location="Politechnika Wrocławska, Wybrzeże Stanisława Wyspiańskiego 27, Wrocław">
-                  <!-- Floating route overlay pill -->
                   <div
                     class="absolute bottom-2 left-2 right-2 bg-surface-container-lowest/95 backdrop-blur-md p-2 rounded-lg shadow-md flex items-center justify-between">
                     <div class="flex items-center gap-2 min-w-0">
@@ -867,31 +616,422 @@
               </div>
             </div>
           </section>
+
+          <!-- =================================================
+               4. SAVE MONEY
+               ================================================= -->
+          <section
+            aria-labelledby="save-title"
+            class="flex flex-col gap-space-md">
+            <div class="flex items-center justify-between">
+              <div>
+                <h2
+                  id="save-title"
+                  class="font-headline-md text-headline-md text-on-surface font-bold">
+                  Save money
+                </h2>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Affordable places within 5 minutes walking distance
+                </p>
+              </div>
+              <a
+                class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-1"
+                href="restaurnt%20screen.html">
+                <span>View all</span>
+                <span class="material-symbols-outlined text-[16px]"
+                  >chevron_right</span
+                >
+              </a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+              <!-- Card 1: Milk bar -->
+              <a
+                class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col"
+                href="restaurnt%20screen.html">
+                <div
+                  class="relative h-36 w-full overflow-hidden bg-primary-fixed">
+                  <img
+                    alt="Traditional student milk bar with wooden tables, soup and pierogi"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBziaIHGf_nr4pf-GfavlrSJDZM7TZKm9OIYX9clNW2R9KiTY2U64z3DmNmLktl4IebvlhXJnVACLKGdqqQ2TqNPXdEzpyJQtA7WycaDO2NGPlnAmas7Ki8f08E6yqQbBjD_CtlelGNUn7AIyIcAiFrWBgNAXBg0arrLxrLbdE0aPhlPTwsblZhF-VyZNp1VjQTdN5Q2wUgK368giO6N7-jen5kGrhr76n52lVOI13I" />
+                  <div
+                    class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold text-on-surface flex items-center gap-1 shadow-sm">
+                    <span
+                      class="material-symbols-outlined text-[14px] text-primary material-symbol-filled"
+                      >star</span
+                    >
+                    <span>4.8</span>
+                  </div>
+                  <div
+                    class="absolute bottom-2.5 right-2.5 bg-primary text-on-primary px-2 py-0.5 rounded-full font-label-sm text-label-sm font-semibold shadow-sm">
+                    200 m
+                  </div>
+                </div>
+                <div class="p-3.5 flex flex-col flex-1 justify-between">
+                  <div>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary uppercase font-semibold"
+                      >Restaurants</span
+                    >
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight group-hover:text-primary transition-colors mt-0.5">
+                      Milk Bar Student
+                    </h3>
+                  </div>
+                  <div
+                    class="pt-2 mt-2 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+                    <span class="flex items-center gap-1"
+                      ><span
+                        class="material-symbols-outlined text-[16px] text-primary"
+                        >payments</span
+                      >
+                      12-25 PLN</span
+                    >
+                    <span class="text-primary font-semibold">Open now</span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- Card 2: Supermarkets -->
+              <a
+                class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between gap-space-md"
+                href="#">
+                <div class="flex items-start gap-3">
+                  <div
+                    class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-[20px]"
+                      >shopping_basket</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary uppercase font-semibold"
+                      >Supermarkets</span
+                    >
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight group-hover:text-primary transition-colors mt-0.5">
+                      Groceries on a budget
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Compare nearby stores and find the cheapest place for your
+                      weekly shop.
+                    </p>
+                  </div>
+                </div>
+                <span
+                  class="text-primary font-label-md text-label-md font-bold flex items-center gap-1"
+                  >Find supermarkets
+                  <span class="material-symbols-outlined text-[16px]"
+                    >chevron_right</span
+                  ></span
+                >
+              </a>
+
+              <!-- Card 3: Student discounts -->
+              <a
+                class="group bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between gap-space-md"
+                href="#">
+                <div class="flex items-start gap-3">
+                  <div
+                    class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-[20px]"
+                      >badge</span
+                    >
+                  </div>
+                  <div>
+                    <span
+                      class="font-label-sm text-label-sm text-secondary uppercase font-semibold"
+                      >Student discounts</span
+                    >
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight group-hover:text-primary transition-colors mt-0.5">
+                      Show your student ID
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                      Use your Legitymacja ELS for reduced fares and prices in
+                      the city.
+                    </p>
+                  </div>
+                </div>
+                <span
+                  class="text-primary font-label-md text-label-md font-bold flex items-center gap-1"
+                  >See discounts
+                  <span class="material-symbols-outlined text-[16px]"
+                    >chevron_right</span
+                  ></span
+                >
+              </a>
+            </div>
+          </section>
+
+          <!-- =================================================
+               5. STUDENT ACTIVITIES + MEETING PEOPLE
+               ================================================= -->
+          <section
+            aria-labelledby="activities-title"
+            class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+            <!-- Upcoming events -->
+            <div class="lg:col-span-7 flex flex-col gap-space-md">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h2
+                    id="activities-title"
+                    class="font-headline-md text-headline-md text-on-surface font-bold">
+                    Upcoming student activities
+                  </h2>
+                  <p class="font-body-sm text-body-sm text-secondary">
+                    Events happening on and around campus
+                  </p>
+                </div>
+                <a
+                  class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-1"
+                  href="#">
+                  <span>Calendar</span>
+                  <span class="material-symbols-outlined text-[16px]"
+                    >chevron_right</span
+                  >
+                </a>
+              </div>
+
+              <div class="flex flex-col gap-space-sm" id="events-list">
+                <!-- Event 1 -->
+                <div
+                  class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-3.5 group cursor-pointer">
+                  <div
+                    class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 relative bg-primary-fixed">
+                    <img
+                      alt="Students at a welcome mixer"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZaJIryqhTY05Il5QsIySAeeis3rXrKlbtkie9PH84QAAIWXMf8nbmwpFUcl52wsaOKrnfC8nJDCMBmea05LGw-QYVkiwSLl3g84sG_3evdq0K9summneLsqQB8ft3lOlVgp4PYnkf88dGPPekRZn4L7InUFmDgdnuICM47QMftFYB2xiY_AlKY45FiKLnhAhGlf4wYO5YYNV6urTbFOrmDJMsvZx9-otgrufhYLGf" />
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span
+                        class="bg-primary text-on-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase"
+                        >Free</span
+                      >
+                      <span class="font-label-sm text-label-sm text-secondary"
+                        >Student Hub (C-13)</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface font-bold truncate group-hover:text-primary transition-colors">
+                      Welcome mixer for new students
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+                      <span
+                        class="material-symbols-outlined text-[15px] text-primary"
+                        >schedule</span
+                      >
+                      Sat 21 Nov, 19:00
+                    </p>
+                  </div>
+                  <button
+                    aria-label="Save event"
+                    class="event-toggle w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex-shrink-0">
+                    <span class="material-symbols-outlined text-[18px]"
+                      >add</span
+                    >
+                  </button>
+                </div>
+
+                <!-- Event 2 -->
+                <div
+                  class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-3.5 group cursor-pointer">
+                  <div
+                    class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 relative bg-secondary-fixed">
+                    <img
+                      alt="Students talking with recruiters at a career fair"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDAa8FV_uzunSMJGPOp6JD4-7OZsf00sw4OBOwi6LV6H6bFpyN8e9jKcWHlg3TagObFmDCkhttrLbd4Tn2G5vrDfGggvDCdphjoPbHaA5BkTgngnm-x3ZfoLbODcWCDjegEDpG3l-Y-knDqiE23N6XHUGJfNo4tKX8Gex1DIhiSIYOpA-l_HSLeNDdsgjIcWiSchySIylCB-6Kclh9XwTbyfGN1vuC5RDztPxEHVfy" />
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span
+                        class="bg-primary text-on-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase"
+                        >Free</span
+                      >
+                      <span class="font-label-sm text-label-sm text-secondary"
+                        >Building A-1 Aula</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface font-bold truncate group-hover:text-primary transition-colors">
+                      Career fair: IT and engineering
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+                      <span
+                        class="material-symbols-outlined text-[15px] text-primary"
+                        >schedule</span
+                      >
+                      Tue 24 Nov, 10:00
+                    </p>
+                  </div>
+                  <button
+                    aria-label="Save event"
+                    class="event-toggle w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex-shrink-0">
+                    <span class="material-symbols-outlined text-[18px]"
+                      >add</span
+                    >
+                  </button>
+                </div>
+
+                <!-- Event 3 -->
+                <div
+                  class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-3.5 group cursor-pointer">
+                  <div
+                    class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 relative bg-tertiary-fixed">
+                    <img
+                      alt="Students celebrating in Wrocław old town pubs"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb3hwYD8icOTRq11NCw_uvMarx1mhjPSScHAMLIjRHn7A-cus5_LhWQ8ik1fXGCYqxcJVAVfRmDyfWQL-xDDz7lIgMqApSbYrI7rgQHHW2AhAPcFPOrHRlLfogV0bj0ZE_67DJs_jdfXBsejg2U2xHvstMAnBDuMJl3JuJSkSnHGXxkNF0IbBrFLD-NshaGUKzXGNQrjPoKzeAf4cUuba1DxnE9uo-u0fkn8C8q0dk" />
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center gap-2 mb-1">
+                      <span
+                        class="bg-surface-container-high text-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase"
+                        >15 PLN</span
+                      >
+                      <span class="font-label-sm text-label-sm text-secondary"
+                        >Meeting at Polinka Station</span
+                      >
+                    </div>
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface font-bold truncate group-hover:text-primary transition-colors">
+                      Campus Night Pub Crawl
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+                      <span
+                        class="material-symbols-outlined text-[15px] text-primary"
+                        >schedule</span
+                      >
+                      Fri 20 Nov, 20:30
+                    </p>
+                  </div>
+                  <button
+                    aria-label="Save event"
+                    class="event-toggle w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex-shrink-0">
+                    <span class="material-symbols-outlined text-[18px]"
+                      >add</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Meet people -->
+            <div class="lg:col-span-5 flex flex-col gap-space-md">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h2
+                    class="font-headline-md text-headline-md text-on-surface font-bold">
+                    Meet people
+                  </h2>
+                  <p class="font-body-sm text-body-sm text-secondary">
+                    Find friends, groups and nights out
+                  </p>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 gap-space-sm">
+                <a
+                  class="group bg-surface-container-lowest rounded-xl p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-3.5"
+                  href="#">
+                  <div
+                    class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-[20px]"
+                      >group</span
+                    >
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+                      Students near you
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant">
+                      Connect with people from your faculty and dormitory.
+                    </p>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-primary"
+                    >chevron_right</span
+                  >
+                </a>
+                <a
+                  class="group bg-surface-container-lowest rounded-xl p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-3.5"
+                  href="bar%20screen.html">
+                  <div
+                    class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-[20px]"
+                      >local_bar</span
+                    >
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+                      Student bars
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant">
+                      Relaxed places to meet after classes.
+                    </p>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-primary"
+                    >chevron_right</span
+                  >
+                </a>
+                <a
+                  class="group bg-surface-container-lowest rounded-xl p-3.5 shadow-sm hover:shadow-md transition-all duration-200 flex items-center gap-3.5"
+                  href="#">
+                  <div
+                    class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-[20px]"
+                      >nightlife</span
+                    >
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <h3
+                      class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+                      Clubs
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant">
+                      Nights out with student-friendly entry.
+                    </p>
+                  </div>
+                  <span
+                    class="material-symbols-outlined text-[18px] text-primary"
+                    >chevron_right</span
+                  >
+                </a>
+              </div>
+            </div>
+          </section>
         </div>
-        <script>
-          // Micro-interactions for category tiles & activity bookmarks
-          document.addEventListener("DOMContentLoaded", () => {
-            const activityButtons = document.querySelectorAll(
-              'button:has(span:contains("add"))',
-            );
-            activityButtons.forEach((btn) => {
-              btn.addEventListener("click", (e) => {
-                e.stopPropagation();
-                const icon = btn.querySelector(".material-symbols-outlined");
-                if (icon) {
-                  if (icon.textContent === "add") {
-                    icon.textContent = "check";
-                    btn.classList.add("bg-primary", "text-on-primary");
-                  } else {
-                    icon.textContent = "add";
-                    btn.classList.remove("bg-primary", "text-on-primary");
-                  }
-                }
-              });
-            });
-          });
-        </script>
       </main>
     </div>
+
+    <script>
+      // Toggle "save event" buttons (add ↔ check)
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".event-toggle").forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const icon = btn.querySelector(".material-symbols-outlined");
+            if (!icon) return;
+            const saved = icon.textContent.trim() === "check";
+            icon.textContent = saved ? "add" : "check";
+            btn.classList.toggle("bg-primary", !saved);
+            btn.classList.toggle("text-on-primary", !saved);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
