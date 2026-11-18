@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.material-symbol-filled {
+  font-variation-settings: "FILL" 1;
+}
+
+.mini-route-preview {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSdd25ZOTPKvllZJIegOUg5UXfqfi_lVTWPs8C33l1UgoiZe_49uvhTlEa1srDlbEB4FyBg4EAfWSbf82NA6D8dNcRWD8iu4qWk_QbkeazuhNdU3dPSYzdPHEvBvzX6Dx3q8D1i-FunJpMYq-YwhdNnN3Md_FgiLMt79qvwGvoRhndzijALTTq8aL0XCldiLtv050M-SL5Er4CwZ6Tbm9xEj4yIoqIDCbP5Rg93Apc");
+}
+
+#bar-walk-1 { width: 5%; }
+#bar-dwell { width: 48%; }
+#bar-walk-2 { width: 15%; }
+#bar-free { width: 32%; }

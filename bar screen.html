@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><title>Navi pWr</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="styles.css" rel="stylesheet"/>
+</head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="p-space-md"><div class="flex items-center gap-space-sm px-space-xs py-space-sm mb-space-md"><img alt="Navi pWr Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDYyOxo_E-GTQ1O6i-xuX6-dWu3zfpexjCUT_emDf3Y_8_OkxYPtNmiQrDxirCEqzASdRoT8QCrlnvhF9oyLDiIruYaGrwDvLyD_AZTp9xWfaHMrG5f9EfOnYwHoX8akBD_Nv-I6f51gtUQZ7NhNIo9-j3_MNN1xXaGLCx0K_o4sqkMq27Qyzepu7uiza9kHKVBWZgPsIy8aH-9Q8xd3yC7Nltxp3N3bE6MRebaLiCBmQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">Navi pWr</span><span class="font-label-sm text-label-sm text-secondary uppercase">Politechnika Wrocławska</span></div></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="home" href="index.html"><span class="material-symbols-outlined text-[20px]">home</span><span>Home</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="assistant" href="Assistance%20screen.html"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span>Assistant</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="events" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span>Events</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="meet-people" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span>Meet people</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pwr-information" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span>PWr information</span></a><div class="pt-space-md pb-space-xs px-space-md"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Explore places</span></div><a class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="supermarkets" href="#"><span class="material-symbols-outlined text-[18px]">shopping_basket</span><span>Supermarkets</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pharmacies" href="#"><span class="material-symbols-outlined text-[18px]">local_pharmacy</span><span>Pharmacies</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="restaurants" href="restaurnt%20screen.html"><span class="material-symbols-outlined text-[18px]">restaurant</span><span>Restaurants</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2 rounded-full transition-all bg-primary text-on-primary font-bold shadow-sm" data-path="bars" href="bar%20screen.html"><span class="material-symbols-outlined text-[18px]">local_bar</span><span>Bars</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="clubs" href="#"><span class="material-symbols-outlined text-[18px]">nightlife</span><span>Clubs</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="libraries" href="#"><span class="material-symbols-outlined text-[18px]">local_library</span><span>Libraries</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dormitory-and-housing" href="#"><span class="material-symbols-outlined text-[18px]">apartment</span><span>Dormitory and housing</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="transport" href="Transport%20screen.html"><span class="material-symbols-outlined text-[18px]">directions_transit</span><span>Transport</span></a></nav></div><div class="p-space-md bg-surface-container-low mx-space-sm mb-space-sm rounded-xl"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">hub</span><div><p class="font-label-sm text-label-sm text-on-surface font-bold">PWr Campus Wifi</p><p class="font-body-sm text-body-sm text-secondary">Eduroam Connected</p></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center flex-1 max-w-lg mr-space-lg"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full pl-11 pr-space-md py-2 bg-surface-container rounded-full font-body-md text-body-md text-on-surface placeholder-outline focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Ask anything or search places..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">language</span><span class="font-label-md text-label-md font-semibold text-on-surface">EN</span><span class="material-symbols-outlined text-[16px]">expand_more</span></div><button class="relative p-2 rounded-full hover:bg-surface-container transition-colors text-on-surface-variant"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-primary rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right hidden sm:block"><p class="font-label-md text-label-md font-bold text-on-surface leading-tight">Jan Kowalski</p><p class="font-label-sm text-label-sm text-secondary">Faculty of W-4</p></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5sS5ts0r6NdedS0-HmlaIfYHZXIETYpFNPvbjolcQjEAXMOEHrvJ7XF04e7OlQC4cUm8GaBcPjK7Y-4CDpK9jkA3ePApW0tYaojDeSiWaKi8yIXq_oEj-ag7yJV0tYvMYhTtogs_A7nsh2lybxwI23nOkZAKHSjHEHGvQiDzqQyPloZyXsuuQhOEBrBsgWvZGhEtgHQqXUZvzdcoxvY2l_YB5gyukG4oI__ZE2m6O"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen px-space-xl py-space-xl"><div class="flex flex-col w-full">
+<!-- Interactive Explorer & Directory View -->
+<div class="flex flex-col gap-space-lg">
+<!-- Top Headline & Category Selector Strip -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-primary/10 text-primary uppercase font-bold tracking-wider">
+            Campus Radar • Plac Grunwaldzki
+          </span>
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-secondary">
+<span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            84 friends online
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Explore Places &amp; Student Spots
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-0.5">
+          Curated campus hangout hubs, cheap student lunch canteens, craft bars, and 24/7 study shelters cross-checked with your live PWr class timetable.
+        </p>
+</div>
+<!-- Quick Action: Propose Spot -->
+<button class="self-start md:self-auto inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-[18px]">add_location_alt</span>
+<span>+ Add custom spot</span>
+</button>
+</div>
+<!-- Category Pill Rail -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+<button class="spot-filter-tab px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm whitespace-nowrap transition-all" data-category="all">
+        All Spots (34)
+      </button>
+<button class="spot-filter-tab px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md whitespace-nowrap transition-all flex items-center gap-1.5" data-category="bars">
+<span class="material-symbols-outlined text-[18px] text-primary">local_bar</span>
+        Bars &amp; Pubs (12)
+      </button>
+<button class="spot-filter-tab px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md whitespace-nowrap transition-all flex items-center gap-1.5" data-category="food">
+<span class="material-symbols-outlined text-[18px] text-primary">restaurant</span>
+        Bistros &amp; Milk Bars (8)
+      </button>
+<button class="spot-filter-tab px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md whitespace-nowrap transition-all flex items-center gap-1.5" data-category="cafes">
+<span class="material-symbols-outlined text-[18px] text-primary">coffee</span>
+        Cafés &amp; Quick Bites (5)
+      </button>
+<button class="spot-filter-tab px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md whitespace-nowrap transition-all flex items-center gap-1.5" data-category="study">
+<span class="material-symbols-outlined text-[18px] text-primary">menu_book</span>
+        Quiet Study Hubs (4)
+      </button>
+<button class="spot-filter-tab px-4 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md whitespace-nowrap transition-all flex items-center gap-1.5" data-category="shops">
+<span class="material-symbols-outlined text-[18px] text-primary">shopping_basket</span>
+        Supermarkets (5)
+      </button>
+</div>
+<!-- Main Two-Column Layout (Wireframe right: Filter sidebar + Result cards) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Sticky Filter Sidebar (Wireframe Left: Show Everything, Checkboxes, Budget Slider, Schedule cross-reference) -->
+<aside class="lg:col-span-4 xl:col-span-3 flex flex-col gap-space-md">
+<!-- Filter Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Filters</span>
+<button class="font-label-sm text-label-sm text-primary hover:underline" id="reset-filters">Reset all</button>
+</div>
+<!-- Master Show Everything Checkbox (from wireframe "SHOW EVERYTHINGS [x]") -->
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 text-primary rounded accent-primary cursor-pointer" id="show-all-toggle" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface font-bold">Show everything</span>
+</label>
+<!-- Type Checklists -->
+<div class="flex flex-col gap-2 pt-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold">Place Type</span>
+<label class="flex items-center justify-between cursor-pointer group py-1">
+<span class="flex items-center gap-2 font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">
+<input checked="" class="category-checkbox accent-primary rounded w-4 h-4" data-type="bar" type="checkbox"/>
+<span>Bar &amp; Pubs</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">12</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group py-1">
+<span class="flex items-center gap-2 font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">
+<input checked="" class="category-checkbox accent-primary rounded w-4 h-4" data-type="restaurants" type="checkbox"/>
+<span>Restaurants &amp; Canteens</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">9</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group py-1">
+<span class="flex items-center gap-2 font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">
+<input checked="" class="category-checkbox accent-primary rounded w-4 h-4" data-type="shops" type="checkbox"/>
+<span>Shops &amp; 24h Markets</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">6</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group py-1">
+<span class="flex items-center gap-2 font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">
+<input checked="" class="category-checkbox accent-primary rounded w-4 h-4" data-type="events" type="checkbox"/>
+<span>Events &amp; Open Stages</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">4</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group py-1">
+<span class="flex items-center gap-2 font-body-md text-body-md text-on-surface group-hover:text-primary transition-colors">
+<input checked="" class="category-checkbox accent-primary rounded w-4 h-4" data-type="study" type="checkbox"/>
+<span>Quiet Study &amp; Libraries</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">3</span>
+</label>
+</div>
+<!-- Budget Range Slider (Wireframe: 'budget filter') -->
+<div class="flex flex-col gap-2 pt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold">Max Budget</span>
+<span class="font-label-md text-label-md text-primary font-bold" id="budget-value">50 PLN (~11 €)</span>
+</div>
+<input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-primary" id="budget-slider" max="100" min="10" step="5" type="range" value="50"/>
+<div class="flex justify-between font-label-sm text-label-sm text-secondary">
+<span>Cheap (10 PLN)</span>
+<span>Average</span>
+<span>Splurge (100 PLN)</span>
+</div>
+</div>
+<!-- Rating Filter (Wireframe: 'stars' / 'student valutazioni') -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold">Student Rating</span>
+<div class="flex items-center gap-1">
+<button class="star-filter flex-1 py-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors text-center" data-stars="all">Any</button>
+<button class="star-filter flex-1 py-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors text-center" data-stars="3">3.5★</button>
+<button class="star-filter flex-1 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm transition-colors text-center" data-stars="4">4.0★</button>
+<button class="star-filter flex-1 py-1.5 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-colors text-center" data-stars="4.5">4.5★+</button>
+</div>
+</div>
+<!-- Live Friend Activity Filter (Wireframe: 'friends -> red, other user -> blue') -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Friend Radar</span>
+</div>
+<input class="accent-primary rounded w-4 h-4 cursor-pointer" id="friends-only-toggle" type="checkbox"/>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+              Show only spots where your PWr friends or coursemates are currently checked in.
+            </p>
+</div>
+<!-- Timetable Cross-Reference Feature (From wireframe bottom note: "incrocio con il calendario per capire se e fattibile prima delle lezioni...") -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Live Schedule Feasibility</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+              Next up: <span class="font-bold text-on-surface">Algorithms &amp; Complexity</span> at 15:15 in Building C-3.
+            </p>
+<div class="flex items-center gap-1.5 mt-1 text-label-sm font-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Spots tagged safe for quick return</span>
+</div>
+</div>
+</div>
+<!-- Campus Interactive Mini-Map Preview (From wireframe bottom 'MAP' sketch) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-md flex items-center justify-between pb-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Campus Heatmap</span>
+<span class="font-label-sm text-label-sm text-secondary">Plac Grunwaldzki</span>
+</div>
+<!-- Mock Map Container with Pins matching wireframe notes -->
+<div class="relative w-full h-44 bg-surface-container-high overflow-hidden" data-location="Politechnika Wrocławska Campus, Wroclaw">
+<div class="absolute inset-0 opacity-20 pointer-events-none bg-[radial-gradient(#9e001f_1px,transparent_1px)] [background-size:12px_12px]"></div>
+<!-- Campus Building Outlines -->
+<div class="absolute top-4 left-6 w-20 h-14 bg-surface-container-lowest rounded shadow-sm flex items-center justify-center text-label-sm font-label-sm font-bold text-secondary">
+              Bud. C-13
+            </div>
+<div class="absolute bottom-4 left-10 w-24 h-16 bg-surface-container-lowest rounded shadow-sm flex items-center justify-center text-label-sm font-label-sm font-bold text-secondary">
+              Bud. A-1 (Main)
+            </div>
+<div class="absolute top-8 right-6 w-16 h-20 bg-surface-container-lowest rounded shadow-sm flex items-center justify-center text-label-sm font-label-sm font-bold text-secondary">
+              Dorm T-16
+            </div>
+<!-- Friend Pins (Red) and Other Users (Blue) according to wireframe annotation -->
+<div class="absolute top-10 left-16 flex items-center justify-center" title="Friend: Kasia &amp; Marek at C-13 Bistro">
+<span class="relative flex h-3.5 w-3.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-primary ring-2 ring-surface-container-lowest"></span>
+</span>
+</div>
+<div class="absolute top-14 right-10 flex items-center justify-center" title="Friend: Mateusz at Dormitory Bar">
+<span class="relative flex h-3.5 w-3.5">
+<span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-primary ring-2 ring-surface-container-lowest"></span>
+</span>
+</div>
+<div class="absolute bottom-8 right-16 flex items-center justify-center" title="Other students studying">
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="absolute bottom-10 left-28 flex items-center justify-center" title="Other students coffee run">
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary ring-2 ring-surface-container-lowest"></span>
+</div>
+<!-- River Odra ribbon graphic -->
+<div class="absolute -bottom-2 -left-4 w-full h-6 bg-secondary-container/60 -rotate-3 blur-[1px]"></div>
+</div>
+<div class="p-space-md flex items-center justify-between text-label-sm font-label-sm">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2.5 h-2.5 rounded-full bg-primary inline-block"></span> Friends (Red)
+            </span>
+<span class="flex items-center gap-1.5 text-secondary">
+<span class="w-2 h-2 rounded-full bg-tertiary inline-block"></span> Students (Blue)
+            </span>
+<a class="text-primary font-bold hover:underline" href="#">Full Map →</a>
+</div>
+</div>
+</aside>
+<!-- Main Directory Feed (Spot Cards + Feasibility + Student Reviews) -->
+<main class="lg:col-span-8 xl:col-span-9 flex flex-col gap-space-lg">
+<!-- Top Sorting & Quick Stats Bar -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm px-space-md py-3 flex flex-wrap items-center justify-between gap-3">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Showing:</span>
+<span class="font-body-md text-body-md text-secondary">8 popular spots nearby campus</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary">Sort by:</span>
+<select class="bg-surface-container px-3 py-1.5 rounded-full font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+<option>Shortest walk from current class</option>
+<option>Highest PWr Student Rating</option>
+<option>Most Friends Right Now</option>
+<option>Lowest Price First</option>
+</select>
+</div>
+</div>
+<!-- Spot Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Spot Card 1: Kredens Student Bar -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col hover:shadow-md transition-shadow group">
+<div class="relative h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Vibrant cozy student pub interior with rustic wooden tables, warm string lights, copper beer taps, and engineering students laughing over pint glasses in Wroclaw Poland, warm cinematic lighting, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA-ICwpyTEZoBeXyIoN4q21xJc8e5oXO3SSUgO_NWohLnewrJmUF6W3dBB5FS1u64A9RE-HiBYT7Y_Z-NFOUGbHnqJlltlC2-06Rf7KiZecI8hr_tt_xUu64JaHfXqfWlM-CDpVd-PNQn_90fqe3LrMrTimC1YepdZCOQ79pbOPgsg1RIWDNyOS5YgioDjgOwIISJzWtTMorXI5EIpUn_EYrBY_cLos_TaU46A-4Rx"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary text-on-primary font-bold shadow-sm">
+                  15% off with PWr ID
+                </span>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-semibold shadow-sm">
+                  12 PLN / Pint
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur-sm flex items-center gap-1 text-label-sm font-label-sm font-bold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>3 friends here</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<div>
+<span class="text-label-sm font-label-sm text-secondary uppercase font-semibold">Pub • Plac Grunwaldzki</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Kredens Student Bar</h3>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-md text-label-md font-label-md font-bold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-amber-500 fill-current material-symbol-filled">star</span>
+<span>4.8</span>
+<span class="text-secondary font-normal text-label-sm">(342)</span>
+</div>
+</div>
+<!-- Schedule feasibility indicator (Directly addressing the user's wireframe note) -->
+<div class="p-2 rounded-lg bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">timer</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-sm text-label-sm font-bold text-on-surface truncate">
+                      Safe before 15:15 Algorithms lecture
+                    </p>
+<p class="font-body-sm text-body-sm text-secondary truncate">
+                      5 min walk (350m) • 40 min beer window available
+                    </p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Legendary basement watering hole right behind Faculty of Electronics. Quick service, cheap draft lager, and board games.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<button class="open-details-btn inline-flex items-center gap-1 font-label-md text-label-md text-primary font-bold hover:underline" data-spot="kredens">
+<span>Student Experience</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary-container transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">directions_walk</span>
+<span>Route</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Spot Card 2: PWr C-13 Bistro & Canteen -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col hover:shadow-md transition-shadow group">
+<div class="relative h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Modern architectural glass building cafe at technical university, students eating healthy meal bowls and pierogi at minimalist wooden counters, daylight streaming through large circular windows, Wroclaw modern campus vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfOYbLTq9_T9S9LWud0UEdRJEMuHkERn5cun5Twdsn4wn937vZgUv6B-_dLjUw-k-BZXaKf4EFdmysIOuSqEULM5Oveszu4yz40Pdn4ZRiSTM0YLqNlmTILC4hQCMm0kbIsOySxcgxGR9Tq1YuPVFIZ-MqcLg2uEO869iRjPxYL81e8C_U5QGnidwgwWM-68hxbc8IhWXtLhCLr925nS7753yGtvLPEE-zbdXQxfmI"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-semibold shadow-sm">
+                  18-24 PLN Lunch
+                </span>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-emerald-700 text-white font-bold shadow-sm">
+                  Zero Walk • On Campus
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur-sm flex items-center gap-1 text-label-sm font-label-sm font-bold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>6 friends here</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<div>
+<span class="text-label-sm font-label-sm text-secondary uppercase font-semibold">Canteen • Integrated Student Centre</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">C-13 „Serowiec“ Bistro</h3>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-md text-label-md font-label-md font-bold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-amber-500 fill-current material-symbol-filled">star</span>
+<span>4.5</span>
+<span class="text-secondary font-normal text-label-sm">(612)</span>
+</div>
+</div>
+<!-- Schedule feasibility indicator -->
+<div class="p-2 rounded-lg bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-sm text-label-sm font-bold text-on-surface truncate">
+                      Extremely Feasible: Inside Building C-13
+                    </p>
+<p class="font-body-sm text-body-sm text-secondary truncate">
+                      50m walk • 8 min average hot lunch prep
+                    </p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Traditional Polish dumplings, daily pasta specials, and espresso bar under the famous cheese-hole architecture.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<button class="open-details-btn inline-flex items-center gap-1 font-label-md text-label-md text-primary font-bold hover:underline" data-spot="c13">
+<span>Student Experience</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary-container transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">directions_walk</span>
+<span>Navigate</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Spot Card 3: Stara Odra Beach Bar -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col hover:shadow-md transition-shadow group">
+<div class="relative h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Outdoor open-air riverside beach bar on the banks of river Odra in Wroclaw, deck chairs on sand, string bistro lights, sunset reflection on water, university students socializing with craft drinks, relaxing summer atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOhimRIx3RDPtIgJNgV7jSoIXR4KBxCaKmQRPY5bpx7wXzger5CZvKXKHIDKY4SBzBsQHySCDToR8Myb8PvXvpZ1mkOLsxZZdIyvFAnBxLqntheyZvrXkx41rU1maV-s175mVkhsbnJJ3YSVOniW15fuctvFjqO_WvKfK7GiLa76ii6j-qSVlohjrgqqAzFTW_7ecOZbMy41bFBwKDxP8oO56TEgUEwMnRa6NXNHbx"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-semibold shadow-sm">
+                  14-22 PLN Drinks
+                </span>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary/20 text-primary font-bold">
+                  Open Air
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur-sm flex items-center gap-1 text-label-sm font-label-sm font-bold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>0 friends now</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<div>
+<span class="text-label-sm font-label-sm text-secondary uppercase font-semibold">Riverside • Wybrzeże Wyspiańskiego</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Stara Odra Beach Bar</h3>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-md text-label-md font-label-md font-bold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-amber-500 fill-current material-symbol-filled">star</span>
+<span>4.7</span>
+<span class="text-secondary font-normal text-label-sm">(489)</span>
+</div>
+</div>
+<!-- Schedule feasibility indicator -->
+<div class="p-2 rounded-lg bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-amber-700 text-[18px]">warning</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-sm text-label-sm font-bold text-amber-900 truncate">
+                      Tight for 15:15 lecture (18 min walk)
+                    </p>
+<p class="font-body-sm text-body-sm text-secondary truncate">
+                      Best for after 17:00 labs or sunset project meetups
+                    </p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  Deckchairs right on the river bank, wood-fired pizza truck, and regular student discount days on Tuesdays.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<button class="open-details-btn inline-flex items-center gap-1 font-label-md text-label-md text-primary font-bold hover:underline" data-spot="odra">
+<span>Student Experience</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary-container transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">directions_walk</span>
+<span>Route</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Spot Card 4: Biedronka Grunwaldzka (Quick Snacks) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col hover:shadow-md transition-shadow group">
+<div class="relative h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="European neighborhood discount supermarket exterior at dusk in Poland with warm lighting, shoppers carrying bread and provisions, clean street layout near student apartments, photojournalistic realistic aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATORvH5Nn5UCK25wE4lZjshJqRMk69dcJh3yP3E_Ihwfu3jXkE1varF2Ok4N4u5StIxnoz8HonTJB1U6ZI0kZiR_hZCPX2-XRi59diMxTDcTTad3fHF94B846xeEcZuklIvOCa-2g59HDuHYVnjXhJ-SsKRWpm_4RIyvGwLgz6CZZWAxG2sHFNrc51KTIJNVXVNzNjiBVS2hYUfU9qTEbQ79FkV3yNLGAT6YD0s_U3"/>
+<div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-semibold shadow-sm">
+                  Budget $ • 5-15 PLN
+                </span>
+<span class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary text-on-primary font-bold">
+                  Open till 23:30
+                </span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur-sm flex items-center gap-1 text-label-sm font-label-sm font-bold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Dorm staple</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<div>
+<span class="text-label-sm font-label-sm text-secondary uppercase font-semibold">Supermarket • Rondo Reagana</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Biedronka Grunwaldzka</h3>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-md text-label-md font-label-md font-bold text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-amber-500 fill-current material-symbol-filled">star</span>
+<span>4.1</span>
+<span class="text-secondary font-normal text-label-sm">(1,040)</span>
+</div>
+</div>
+<!-- Schedule feasibility indicator -->
+<div class="p-2 rounded-lg bg-surface-container-low flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">timer</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-sm text-label-sm font-bold text-on-surface truncate">
+                      Quick 6 min snack run feasible
+                    </p>
+<p class="font-body-sm text-body-sm text-secondary truncate">
+                      Self-checkout lines move in under 3 mins
+                    </p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                  The primary grocery lifeline for Wittigowo dorms (T-15, T-16, T-17). Fresh baked pastries, cold sodas, and energy drinks.
+                </p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<button class="open-details-btn inline-flex items-center gap-1 font-label-md text-label-md text-primary font-bold hover:underline" data-spot="biedronka">
+<span>Student Experience</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold hover:bg-primary-container transition-all flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">directions_walk</span>
+<span>Directions</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Wireframe Right Detail Drawer Modal: 'Student Experience', Real Ratings & Waypoint Route -->
+<div class="hidden bg-surface-container-lowest rounded-xl shadow-lg p-space-lg flex flex-col gap-space-md border border-outline-variant/30" id="spot-modal">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="p-2.5 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-[24px]">reviews</span>
+</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface" id="modal-title">Kredens Student Bar — Student Experience</h3>
+<p class="font-body-sm text-body-sm text-secondary" id="modal-subtitle">Verified feedback by PWr enrolled engineers &amp; Erasmus scholars</p>
+</div>
+</div>
+<button class="p-1.5 rounded-full hover:bg-surface-container text-on-surface-variant transition-colors" id="close-modal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Student Experience Highlights Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Beer / Drink Cost</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">11 – 14 PLN</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Ranked #1 Cheapest Pint</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Noise &amp; Study Feasibility</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Lively / Group only</span>
+<span class="font-label-sm text-label-sm text-secondary">Not for solo study</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Transit to Campus</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">4 mins walk</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-semibold">Building C-4 &amp; C-13</span>
+</div>
+</div>
+<!-- Student Reviews Quotes -->
+<div class="flex flex-col gap-space-sm pt-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Top Student Reviews</span>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Piotr M. • Faculty of Computer Science (W-4)</span>
+<span class="font-label-sm text-label-sm text-amber-600 font-bold">5.0 ★</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                „If you have a 45-minute window between Physics lab and Math tutorials, this is where everyone sits. The bar staff recognizes PWr student cards without asking.“
+              </p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Elena S. • Erasmus Exchange (Arch)</span>
+<span class="font-label-sm text-label-sm text-amber-600 font-bold">4.5 ★</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                „Friendly multilingual bartenders and cozy corners. Just keep an eye on your watch before your 16:00 lab because time flies!“
+              </p>
+</div>
+</div>
+<!-- Bottom Routing Button (From wireframe 'Start Position -> End Position' A-to-B route) -->
+<div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 text-label-md font-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">near_me</span>
+<span>Calculate exact route from <strong>Current Class (C-3)</strong></span>
+</div>
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container transition-all flex items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">alt_route</span>
+<span>Launch Step-by-Step Campus Navigation</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</div>
+<script>
+    // Budget range interactive updates
+    const budgetSlider = document.getElementById('budget-slider');
+    const budgetVal = document.getElementById('budget-value');
+    if (budgetSlider && budgetVal) {
+      budgetSlider.addEventListener('input', (e) => {
+        const pln = e.target.value;
+        const eur = Math.round(pln / 4.3);
+        budgetVal.textContent = pln + ' PLN (~' + eur + ' €)';
+      });
+    }
+
+    // Modal drawer preview logic
+    const spotData = {
+      kredens: {
+        title: 'Kredens Student Bar — Student Experience',
+        sub: 'Verified feedback by PWr enrolled engineers & Erasmus scholars'
+      },
+      c13: {
+        title: 'C-13 "Serowiec" Bistro — Student Experience',
+        sub: 'Campus cafeteria ratings, rush-hour wait times and daily meal quality'
+      },
+      odra: {
+        title: 'Stara Odra Beach Bar — Student Experience',
+        sub: 'Riverside relaxation, outdoor project meetups & Erasmus evenings'
+      },
+      biedronka: {
+        title: 'Biedronka Grunwaldzka — Student Experience',
+        sub: 'Wittigowo dorm grocery tips, quick snack runs & cheap provisions'
+      }
+    };
+
+    const modal = document.getElementById('spot-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalSub = document.getElementById('modal-subtitle');
+    const closeModalBtn = document.getElementById('close-modal');
+
+    document.querySelectorAll('.open-details-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const key = btn.getAttribute('data-spot');
+        if (spotData[key]) {
+          modalTitle.textContent = spotData[key].title;
+          modalSub.textContent = spotData[key].sub;
+          modal.classList.remove('hidden');
+          modal.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      });
+    });
+
+    if (closeModalBtn && modal) {
+      closeModalBtn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+      });
+    }
+
+    // Category pill click active state
+    document.querySelectorAll('.spot-filter-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.spot-filter-tab').forEach(t => {
+          t.classList.remove('bg-primary', 'text-on-primary');
+          t.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        tab.classList.remove('bg-surface-container', 'text-on-surface');
+        tab.classList.add('bg-primary', 'text-on-primary');
+      });
+    });
+
+    // Star filters toggle
+    document.querySelectorAll('.star-filter').forEach(starBtn => {
+      starBtn.addEventListener('click', () => {
+        document.querySelectorAll('.star-filter').forEach(s => {
+          s.classList.remove('bg-primary', 'text-on-primary');
+          s.classList.add('bg-surface-container');
+        });
+        starBtn.classList.remove('bg-surface-container');
+        starBtn.classList.add('bg-primary', 'text-on-primary');
+      });
+    });
+
+    // Reset filters
+    const resetBtn = document.getElementById('reset-filters');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        if (budgetSlider) {
+          budgetSlider.value = 50;
+          budgetVal.textContent = '50 PLN (~11 €)';
+        }
+        document.querySelectorAll('.category-checkbox').forEach(cb => cb.checked = true);
+        const friendsToggle = document.getElementById('friends-only-toggle');
+        if (friendsToggle) friendsToggle.checked = false;
+        const showAll = document.getElementById('show-all-toggle');
+        if (showAll) showAll.checked = true;
+      });
+    }
+  </script>
+</div></main></div></body></html>
