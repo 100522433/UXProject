@@ -51,13 +51,13 @@ module.exports = {
         outline: "#906f6e",
         "secondary-fixed": "#d8e3fb",
         "on-tertiary-fixed-variant": "#003ea8",
-        "on-background": "#281717"
+        "on-background": "#281717",
       },
       borderRadius: {
         DEFAULT: "0.25rem",
         lg: "0.5rem",
         xl: "0.75rem",
-        full: "9999px"
+        full: "9999px",
       },
       spacing: {
         "space-lg": "1.5rem",
@@ -68,7 +68,7 @@ module.exports = {
         "space-md": "1rem",
         "gutter-mobile": "0.75rem",
         margin: "2rem",
-        "margin-mobile": "1rem"
+        "margin-mobile": "1rem",
       },
       fontFamily: {
         "body-lg": ["Plus Jakarta Sans"],
@@ -80,21 +80,33 @@ module.exports = {
         "body-md": ["Plus Jakarta Sans"],
         "headline-lg": ["Plus Jakarta Sans"],
         "headline-sm": ["Plus Jakarta Sans"],
-        "label-md": ["Plus Jakarta Sans"]
+        "label-md": ["Plus Jakarta Sans"],
       },
       fontSize: {
         "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }],
         "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }],
-        "display-hero": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "800" }],
-        "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }],
+        "display-hero": [
+          "40px",
+          { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "800" },
+        ],
+        "headline-lg-mobile": [
+          "24px",
+          { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" },
+        ],
         "headline-md": ["20px", { lineHeight: "28px", fontWeight: "700" }],
-        "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.02em", fontWeight: "700" }],
+        "label-sm": [
+          "11px",
+          { lineHeight: "14px", letterSpacing: "0.02em", fontWeight: "700" },
+        ],
         "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }],
-        "headline-lg": ["30px", { lineHeight: "38px", letterSpacing: "-0.015em", fontWeight: "700" }],
+        "headline-lg": [
+          "30px",
+          { lineHeight: "38px", letterSpacing: "-0.015em", fontWeight: "700" },
+        ],
         "headline-sm": ["16px", { lineHeight: "24px", fontWeight: "600" }],
-        "label-md": ["13px", { lineHeight: "18px", fontWeight: "600" }]
-      }
-    }
+        "label-md": ["13px", { lineHeight: "18px", fontWeight: "600" }],
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };

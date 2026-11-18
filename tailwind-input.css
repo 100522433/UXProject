@@ -37,7 +37,15 @@
   background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSdd25ZOTPKvllZJIegOUg5UXfqfi_lVTWPs8C33l1UgoiZe_49uvhTlEa1srDlbEB4FyBg4EAfWSbf82NA6D8dNcRWD8iu4qWk_QbkeazuhNdU3dPSYzdPHEvBvzX6Dx3q8D1i-FunJpMYq-YwhdNnN3Md_FgiLMt79qvwGvoRhndzijALTTq8aL0XCldiLtv050M-SL5Er4CwZ6Tbm9xEj4yIoqIDCbP5Rg93Apc");
 }
 
-#bar-walk-1 { width: 5%; }
-#bar-dwell { width: 48%; }
-#bar-walk-2 { width: 15%; }
-#bar-free { width: 32%; }
+#bar-walk-1 {
+  width: 5%;
+}
+#bar-dwell {
+  width: 48%;
+}
+#bar-walk-2 {
+  width: 15%;
+}
+#bar-free {
+  width: 32%;
+}
